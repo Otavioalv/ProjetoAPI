@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Usuario</title>
+</head>
+<body class="bg-gray-950 w-lvh flex items-center flex-col">
+    <section class="py-20">
+        
+        <form id="form" enctype="multipart/form-data" onsubmit="createUser(event)" class="bg-white p-8 rounded-lg">
+            <h1 class="text-base font-bold text-center">Criar registro</h1>
+
+            <div class="flex flex-col">
+                <label for="nome">nome</label>
+                <input class="border-solid border-2 border-gray-950 p-1 px-3 rounded-lg" type="text" name="nome" id="nome" placeholder="nome" required/>        
+            </div>
+
+            <div class="flex flex-col">
+                <label for="dataNascimento">data de nascimento</label>
+                <input class="border-solid border-2 border-gray-950 p-1 px-3 rounded-lg" type="date" name="dataNascimento" id="dataNascimento" required/>
+
+            </div>
+
+            <div class="flex flex-col">
+                <label for="endereco">endereço</label>
+                <input class="border-solid border-2 border-gray-950 p-1 px-3 rounded-lg" type="text" name="endereco" id="endereco" placeholder="endereço" required/>
+            </div>
+
+            <div class="flex flex-col">
+                <label for="foto">foto</label>
+                <input class="border-solid border-2 border-gray-950 p-1 px-3 rounded-lg" type="text" name="foto" id="foto"  pattern="https?://.+"  placeholder="endereço URL" required/>
+
+            </div>
+
+            <div class="flex flex-col">
+                <label for="senha">senha</label>
+                <input class="border-solid border-2 border-gray-950 p-1 px-3 rounded-lg" type="text" name="senha" id="senha" placeholder="senha" required/>
+
+            </div>
+
+            <div class="flex mx-4">
+                
+                <label class="px-2">
+                    <input type="radio" name="genero" value="M"> Masculino
+                </label>
+            
+                <label class="px-2">
+                    <input type="radio" name="genero" value="F" checked="true"> Feminino
+                </label>
+
+            </div>
+
+            <div >
+                <input type="hidden" value="" id="idUserForm" >
+            </div>
+
+            <div class="flex justify-center my-3">
+                <button type="submit" class="bg-gray-950 w-full cursor-pointer text-white rounded-xl hover:bg-gray-800 transition-all p-1">Enviar</button>
+            </div>
+        </form>
+    </section>
+
+    <section class="w-full">
+        <div class="w-full flex flex-col items-center">
+            <h1 class="text-white text-xl">lista ussuario</h1>
+            <div id="list-user" class="w-4/5 py-10">
+            </div>
+        </div>
+    </section>
+
+    <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
+    <link href="../../dist/output.css" rel="stylesheet">    
+    <script src="./script.js"></script>
+</body>
+</html>
