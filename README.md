@@ -51,3 +51,5 @@ create table pessoa (
 npm rum dev
 ```
 
+* **Abra o arquivo no caminho api/src/frontEnd/index.html no navegador ou inicie um servidor local**
+
