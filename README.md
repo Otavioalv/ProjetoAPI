@@ -37,7 +37,7 @@ create table pessoa (
    id int primary key auto_increment, 
    nome varchar(120), 
    data_nascimento date, 
-   foto blob, 
+   foto varchar(300), 
    endereco varchar(200),
    sexo varchar(1),
    senha varchar(10)
