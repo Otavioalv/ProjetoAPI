@@ -52,7 +52,7 @@ async function listUserFunction() {
         listUser.innerHTML = '';
 
         datas.map((value: UserInterface, index) => {
-            // console.log(value);
+            console.log(value);
             const divElement:HTMLDivElement = document.createElement('div');
             divElement.innerHTML = `
                 <ul class="bg-white w-full p-8 rounded-xl my-4" id="user-${value.id}">

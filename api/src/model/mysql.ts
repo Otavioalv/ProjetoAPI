@@ -7,7 +7,7 @@ export const connection = mysql.createConnection({
     host: "127.0.0.1",
     user: "root", 
     password: "123456", 
-    database: "cadastro",
+    database: "trabalho",
     port: 3306
 });
 
