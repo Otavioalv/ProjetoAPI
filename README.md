@@ -1,4 +1,4 @@
-# Projeto AJAX - NODE.JS/Fastify - MYSQL - Typesript
+# NODE.JS/Fastify - MYSQL - Typesript
 ---
 ### Pré-requisitos
 
